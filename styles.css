@@ -126,7 +126,7 @@ body {
 @media only screen and (max-width:850px) {
 
   .title-container{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .title-container h2{
@@ -140,6 +140,7 @@ body {
   }
 
   .box-2{
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     position: fixed;
