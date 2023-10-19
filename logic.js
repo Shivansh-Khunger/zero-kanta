@@ -9,8 +9,8 @@ gameStartButton.addEventListener("click", function () {
   gameStartButton.style.display = "none";
   gameStartIndicator.innerHTML = "Game Has Started";
   setTimeout(function () {
-    gameStartIndicator.innerHTML = "Lavde te Lasan"
-  },600)
+    gameStartIndicator.innerHTML = "Lavda te Lasan"
+  },500)
 });
 
 function startGame () {
