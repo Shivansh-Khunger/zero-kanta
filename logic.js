@@ -6,7 +6,7 @@ const gameStartButton = document.getElementById("game-start-button");
 const gameStartButtonForMobile = document.getElementById("game-start-button-for-mobile")
 const gameStartIndicator = document.getElementById('game-start-indicator');
 
-if (screen.width <= 850) {
+if (screen.width <= 1100) {
   ifMobile = 1;
 }
 
