@@ -123,3 +123,58 @@ body {
   margin: 7px;
 }
 
+@media only screen and (max-width:850px) {
+
+  .title-container{
+    margin-bottom: 100px;
+  }
+
+  .title-container h2{
+    font-size: x-large;
+  }
+
+  .box-2-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .box-2{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+  }
+
+  .btn-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-two span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    font-weight: 400;
+  }
+
+  .flex-box-element{
+    height: 100px;
+    width: 100px;
+  }
+
+  .flex-box-element img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .creator-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

@@ -1,17 +1,38 @@
 let ifGameHasStarted = 0;
 let ifCircle = 1;
+let ifMobile = 0;
 const imgBoxes = document.querySelectorAll(".flex-box-element");
 const gameStartButton = document.getElementById("game-start-button");
+const gameStartButtonForMobile = document.getElementById("game-start-button-for-mobile")
 const gameStartIndicator = document.getElementById('game-start-indicator');
 
-gameStartButton.addEventListener("click", function () {
-  startGame();
+if (screen.width <= 850) {
+  ifMobile = 1;
+}
+
+if (!ifMobile) {
+  gameStartButtonForMobile.style.display = "none";
+  gameStartButton.addEventListener("click", function () {
+    startGame();
+    gameStartButton.style.display = "none";
+    gameStartIndicator.innerHTML = "Game Has Started";
+    setTimeout(function () {
+      gameStartIndicator.innerHTML = "Lavda te Lasan";
+    }, 700);
+  });
+}
+
+else {
   gameStartButton.style.display = "none";
-  gameStartIndicator.innerHTML = "Game Has Started";
-  setTimeout(function () {
-    gameStartIndicator.innerHTML = "Lavda te Lasan"
-  },500)
-});
+    gameStartButtonForMobile.addEventListener("click", function () {
+      startGame();
+      gameStartButtonForMobile.style.display = "none";
+      gameStartIndicator.innerHTML = "Game Has Started";
+      setTimeout(function () {
+        gameStartIndicator.innerHTML = "Lavda te Lasan";
+      }, 700);
+    });
+}
 
 function startGame () {
 
