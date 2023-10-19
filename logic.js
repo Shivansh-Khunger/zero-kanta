@@ -3,7 +3,7 @@ let ifCircle = 1;
 let ifMobile = 0;
 const imgBoxes = document.querySelectorAll(".flex-box-element");
 const gameStartButton = document.getElementById("game-start-button");
-const gameStartButtonForMobile = document.getElementById("game-start-button-for-mobile")
+const gameStartButtonForMobile = document.getElementById("game-start-button-for-mobile");
 const gameStartIndicator = document.getElementById('game-start-indicator');
 
 if (screen.width <= 1100) {
